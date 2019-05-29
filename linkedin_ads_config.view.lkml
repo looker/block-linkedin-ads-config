@@ -2,11 +2,12 @@
 
 include: "/app-marketing-linkedin-ads-adapter/*.view"
 include: "/app-marketing-linkedin-ads/*.view"
-include: "/app-marketing-linkedin-ads/linkedin_block_spend.dashboard"
-include: "/app-marketing-linkedin-ads/linkedin_block_clicks.dashboard"
-include: "/app-marketing-linkedin-ads/linkedin_block_impressions.dashboard"
-include: "/app-marketing-linkedin-ads/linkedin_block_conversions.dashboard"
-include: "/app-marketing-linkedin-ads/linkedin_block_overview.dashboard"
+include: "/app-marketing-linkedin-ads/li_campaign_metrics_spend.dashboard"
+include: "/app-marketing-linkedin-ads/li_campaign_metrics_clicks.dashboard"
+include: "/app-marketing-linkedin-ads/li_campaign_metrics_impressions.dashboard"
+include: "/app-marketing-linkedin-ads/li_campaign_metrics_conversions.dashboard"
+include: "/app-marketing-linkedin-ads/linkedin_overview.dashboard"
+include: "/app-marketing-linkedin-ads/linkedin_ads_base.dashboard"
 
 # TODO: Update LinkedIn Ads schema
 
