@@ -14,7 +14,7 @@ remote_dependency: app-marketing-linkedin-ads-adapter {
 
 remote_dependency: app-marketing-linkedin-ads {
   url: "git://github.com/looker/app-marketing-linkedin-ads"
-  ref: "b45512eb7c9cf9bf833582f6c31db7563a2b085e"
+  ref: "b137c3027d786ad51ced51020527e58d4ed4b93c"
 }
 
 constant: CONNECTION_NAME {
