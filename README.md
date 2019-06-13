@@ -15,4 +15,4 @@ Note that the `ref:` should point to the latest commit in thr core block repo [b
 
 This Block is modeled on the schema from Fivetrans's [LinkedIn Ads ETL](https://fivetran.com/directory/linkedin-ads).
 
-The schema documentation for LinkedIn Ads can be found in [LinkedIn's docs](https://developer.linkedin.com/docs/ref/v2/ads/adcampaigns).
+The schema documentation for LinkedIn Ads can be found in [LinkedIn's docs](https://docs.microsoft.com/en-us/advertising/guides/reference?view=bingads-13).
