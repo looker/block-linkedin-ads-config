@@ -1,8 +1,4 @@
 # LinkedIn Ads configuration for Linkedin Ads Block by Looker
-
-include: "/app-marketing-linkedin-ads-adapter/*.view"
-include: "/app-marketing-linkedin-ads/*.view"
-
 # TODO: Update LinkedIn Ads schema
 
 datagroup: linkedin_ads_etl_datagroup {
@@ -10,38 +6,41 @@ datagroup: linkedin_ads_etl_datagroup {
   max_cache_age: "24 hours"
 }
 
-view: linkedin_ads_config {
+# Customize measure definitions in this view.
+view: ad_metrics_base_config {
+  extends: [ad_metrics_base_template]
   extension: required
-
-  # TODO: Update LinkedIn Ads schema
-  dimension: linkedin_ads_schema {
-    hidden: yes
-    sql:@{LINKEDIN_SCHEMA};;
-  }
 }
 
-explore: li_period_comparison {
+
+explore: li_period_comparison_config {
   extends: [li_period_fact]
   hidden: no
+  extension: required
 }
 
-view: li_period_comparison {
+view: li_period_comparison_config {
   extends: [li_period_fact]
+  extension: required
 }
 
 
-explore: linkedin_ad_impressions_campaign {
+explore: linkedin_ad_impressions_campaign_config {
   extends: [linkedin_ad_impressions_campaign_template]
+  extension: required
 }
 
-view: linkedin_ad_impressions_campaign {
+view: linkedin_ad_impressions_campaign_config {
   extends: [linkedin_ad_impressions_campaign_template]
+  extension: required
 }
 
-explore: linkedin_ad_impressions_ad {
+explore: linkedin_ad_impressions_ad_config {
   extends: [linkedin_ad_impressions_ad_template]
+  extension: required
 }
 
-view: linkedin_ad_impressions_ad {
+view: linkedin_ad_impressions_ad_config {
   extends: [linkedin_ad_impressions_ad_template]
+  extension: required
 }
