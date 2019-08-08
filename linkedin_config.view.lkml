@@ -6,6 +6,16 @@ datagroup: linkedin_ads_etl_datagroup {
   max_cache_age: "24 hours"
 }
 
+view: linkedin_ads_config {
+  extension: required
+
+  # TODO: Update LinkedIn Ads schema
+  dimension: linkedin_ads_schema {
+    hidden: yes
+    sql:@{LINKEDIN_SCHEMA};;
+  }
+}
+
 # Customize measure definitions in this view.
 view: ad_metrics_base_config {
   extends: [ad_metrics_base_template]
