@@ -1,5 +1,4 @@
 # LinkedIn Ads configuration for Linkedin Ads Block by Looker
-# TODO: Update LinkedIn Ads schema
 
 datagroup: linkedin_ads_etl_datagroup {
   sql_trigger: SELECT COUNT(*) FROM `@{LINKEDIN_SCHEMA}.ad_analytics_by_campaign` ;;
@@ -9,7 +8,7 @@ datagroup: linkedin_ads_etl_datagroup {
 view: linkedin_ads_config {
   extension: required
 
-  # TODO: Update LinkedIn Ads schema
+# Should remain hidden as it's not intended to be used as a column.
   dimension: linkedin_ads_schema {
     hidden: yes
     sql:@{LINKEDIN_SCHEMA};;
