@@ -8,6 +8,7 @@ datagroup: linkedin_ads_etl_datagroup {
 view: linkedin_ads_config {
   extension: required
 
+# Should remain hidden as it's not intended to be used as a column.
   dimension: linkedin_ads_schema {
     hidden: yes
     sql:@{LINKEDIN_SCHEMA};;
